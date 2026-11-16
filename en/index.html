@@ -1,0 +1,1563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ragnhild Bø - Researcher, PhD in Clinical Neuropsychology</title>
+<meta name="description" content="Ragnhild Bø is a researcher at the Department of Psychology, University of Oslo, specialising in clinical neuropsychology, depression, alcohol and cognitive function. Completed the Programme for Young Research Leaders (YFL) in 2026.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%232b5e3f'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' fill='%23f5f2ed' text-anchor='middle'%3ERB%3C/text%3E%3C/svg%3E">
+<link rel="alternate" hreflang="no" href="https://marcussteinsvaag-beep.github.io/ragnhildbo/">
+<link rel="alternate" hreflang="en" href="https://marcussteinsvaag-beep.github.io/ragnhildbo/en/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Ragnhild Bø - Researcher, PhD in Clinical Neuropsychology">
+<meta property="og:description" content="Researcher at the Department of Psychology, University of Oslo. Depression, alcohol and cognitive function, digital interventions.">
+<meta property="og:url" content="https://marcussteinsvaag-beep.github.io/ragnhildbo/en/">
+<meta property="og:image" content="https://marcussteinsvaag-beep.github.io/ragnhildbo/ragnhild-bo.png">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --ink-light: #555;
+    --ink-faint: #999;
+    --bg: #f5f2ed;
+    --bg-warm: #ede9e2;
+    --accent: #2b5e3f;
+    --accent-muted: #4a7c5f;
+    --rule: #d4cfc8;
+    --white: #ffffff;
+    --serif: 'Cormorant Garamond', Georgia, serif;
+    --sans: 'DM Sans', sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 3rem;
+    background: rgba(245, 242, 237, 0.9);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .nav-name {
+    font-family: var(--serif);
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    color: var(--ink);
+    text-decoration: none;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-light);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--accent); }
+
+  .lang-switch { margin-left: 1.5rem; font-size: 0.75rem; letter-spacing: 0.12em; color: var(--ink-faint); }
+  .lang-switch a { color: var(--ink-light); text-decoration: none; }
+  .lang-switch a:hover { color: var(--accent); }
+  .lang-switch .current { color: var(--accent); font-weight: 500; }
+  .nav-right { display: flex; align-items: center; }
+  @media (max-width: 900px) {
+    .nav-right { width: 100%; }
+    .nav-links { flex-wrap: nowrap !important; overflow-x: auto; scrollbar-width: none; white-space: nowrap; }
+    .nav-links::-webkit-scrollbar { display: none; }
+    .lang-switch { position: absolute; top: 1rem; right: 1.2rem; margin-left: 0; }
+    .hero { padding-top: 88px !important; }
+  }
+
+  /* ── UNDERVISNING ── */
+  #undervisning { background: var(--white); border-top: 1px solid var(--rule); }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 72px;
+    opacity: 0;
+    animation: fadeIn 1s ease 0.2s forwards;
+  }
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6rem 4rem 6rem 6rem;
+  }
+
+  .hero-label {
+    font-family: var(--sans);
+    font-size: 0.72rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-name {
+    font-family: var(--serif);
+    font-size: clamp(3rem, 5vw, 5.5rem);
+    font-weight: 300;
+    line-height: 1.05;
+    color: var(--ink);
+    margin-bottom: 0.3rem;
+  }
+
+  .hero-name em {
+    font-style: italic;
+    color: var(--accent);
+  }
+
+  .hero-title {
+    font-family: var(--serif);
+    font-size: 1.3rem;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--ink-light);
+    margin-bottom: 2.5rem;
+  }
+
+  .hero-desc {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: var(--ink-light);
+    max-width: 38ch;
+    margin-bottom: 3rem;
+  }
+
+  .hero-cta {
+    display: inline-flex;
+    gap: 1.2rem;
+  }
+
+  .btn-primary {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: var(--accent);
+    color: var(--white);
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.2s;
+  }
+
+  .btn-primary:hover {
+    background: var(--accent-muted);
+    transform: translateY(-1px);
+  }
+
+  .btn-secondary {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    border: 1px solid var(--rule);
+    color: var(--ink-light);
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: border-color 0.2s, color 0.2s;
+  }
+
+  .btn-secondary:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  .hero-image-panel {
+    position: relative;
+    background: var(--bg-warm);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-image-panel::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, var(--bg-warm) 0%, #d9d3c8 100%);
+  }
+
+  .hero-photo {
+    position: relative;
+    z-index: 1;
+    width: 340px;
+    height: 340px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 50%;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.12);
+  }
+
+  /* Decorative corner element */
+  .hero-text::after {
+    content: '';
+    position: absolute;
+    top: 5rem; right: 48%;
+    width: 1px;
+    height: 180px;
+    background: linear-gradient(to bottom, transparent, var(--rule), transparent);
+  }
+
+  /* ── SECTION SHARED ── */
+  section {
+    padding: 6rem 6rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+
+  section.visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  .section-label {
+    font-family: var(--sans);
+    font-size: 0.7rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.6rem;
+  }
+
+  .section-title {
+    font-family: var(--serif);
+    font-size: clamp(2rem, 3vw, 3rem);
+    font-weight: 300;
+    color: var(--ink);
+    margin-bottom: 3rem;
+    line-height: 1.1;
+  }
+
+  .section-divider {
+    width: 40px;
+    height: 1px;
+    background: var(--accent);
+    margin-bottom: 1.5rem;
+  }
+
+  /* ── ABOUT ── */
+  #om {
+    background: var(--white);
+    border-top: 1px solid var(--rule);
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: start;
+  }
+
+  .about-text p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--ink-light);
+    margin-bottom: 1.2rem;
+  }
+
+  .about-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .meta-group h4 {
+    font-family: var(--sans);
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: 0.8rem;
+  }
+
+  .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .tag {
+    display: inline-block;
+    padding: 0.3rem 0.9rem;
+    border: 1px solid var(--rule);
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    color: var(--ink-light);
+    background: var(--bg);
+  }
+
+  .cv-list {
+    list-style: none;
+  }
+
+  .cv-list li {
+    display: flex;
+    gap: 1.5rem;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid var(--rule);
+    font-size: 0.88rem;
+  }
+
+  .cv-list li:last-child { border-bottom: none; }
+
+  .cv-year {
+    font-family: var(--serif);
+    font-size: 0.85rem;
+    color: var(--accent);
+    white-space: nowrap;
+    min-width: 80px;
+    padding-top: 1px;
+  }
+
+  .cv-desc { color: var(--ink-light); line-height: 1.5; }
+
+  /* ── RESEARCH ── */
+  #forskning {
+    background: var(--bg);
+    border-top: 1px solid var(--rule);
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+  }
+
+  .project-card {
+    background: var(--white);
+    padding: 2rem;
+    border-top: 2px solid var(--accent);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .project-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.07);
+  }
+
+  .project-card h3 {
+    font-family: var(--serif);
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--ink);
+    margin-bottom: 0.8rem;
+    line-height: 1.3;
+  }
+
+  .project-card p {
+    font-size: 0.85rem;
+    color: var(--ink-light);
+    line-height: 1.6;
+  }
+
+  .research-groups h3 {
+    font-family: var(--serif);
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: var(--ink);
+    margin-bottom: 1.5rem;
+  }
+
+  .groups-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+  }
+
+  .group-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.8rem 1.2rem;
+    background: var(--bg-warm);
+    font-size: 0.88rem;
+    color: var(--ink-light);
+  }
+
+  .group-item::before {
+    content: '→';
+    color: var(--accent);
+    font-size: 0.8rem;
+  }
+
+  /* ── PUBLIKASJONER ── */
+  #publikasjoner {
+    background: var(--white);
+    border-top: 1px solid var(--rule);
+  }
+
+  .pub-tabs {
+    display: flex;
+    gap: 0;
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .pub-tab {
+    padding: 0.7rem 1.5rem;
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: var(--ink-faint);
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+    transition: color 0.2s;
+  }
+
+  .pub-tab.active {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+  }
+
+  .pub-list { display: none; }
+  .pub-list.active { display: block; }
+
+  .pub-item {
+    padding: 1.4rem 0;
+    border-bottom: 1px solid var(--rule);
+    display: grid;
+    grid-template-columns: 3rem 1fr;
+    gap: 1.2rem;
+  }
+
+  .pub-year {
+    font-family: var(--serif);
+    font-size: 0.9rem;
+    color: var(--accent);
+    padding-top: 3px;
+  }
+
+  .pub-content {}
+
+  .pub-authors {
+    font-size: 0.82rem;
+    color: var(--ink-faint);
+    margin-bottom: 0.3rem;
+  }
+
+  .pub-title {
+    font-family: var(--serif);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--ink);
+    line-height: 1.4;
+    margin-bottom: 0.3rem;
+  }
+
+  .pub-journal {
+    font-size: 0.82rem;
+    color: var(--ink-light);
+    font-style: italic;
+  }
+
+  .pub-doi {
+    display: inline-block;
+    margin-top: 0.4rem;
+    font-size: 0.75rem;
+    color: var(--accent);
+    text-decoration: none;
+    letter-spacing: 0.05em;
+  }
+
+  .pub-doi:hover { text-decoration: underline; }
+
+  /* ── KONTAKT ── */
+  #kontakt {
+    background: var(--ink);
+    color: var(--white);
+    border-top: 1px solid var(--rule);
+  }
+
+  #kontakt .section-label { color: var(--accent-muted); }
+  #kontakt .section-title { color: var(--white); }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: start;
+  }
+
+  .contact-info p {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 2rem;
+  }
+
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .contact-row {
+    display: flex;
+    gap: 1.5rem;
+    align-items: baseline;
+  }
+
+  .contact-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--accent-muted);
+    min-width: 70px;
+  }
+
+  .contact-value {
+    font-family: var(--serif);
+    font-size: 1rem;
+    color: rgba(255,255,255,0.8);
+  }
+
+  .contact-value a {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .contact-value a:hover { color: var(--white); }
+
+  .contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding-top: 1rem;
+  }
+
+  .ext-link {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem 1.5rem;
+    border: 1px solid rgba(255,255,255,0.1);
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-family: var(--sans);
+    transition: all 0.2s;
+  }
+
+  .ext-link:hover {
+    border-color: var(--accent-muted);
+    color: var(--white);
+    background: rgba(255,255,255,0.04);
+  }
+
+  .ext-link-arrow {
+    margin-left: auto;
+    opacity: 0.4;
+    transition: opacity 0.2s, transform 0.2s;
+  }
+
+  .ext-link:hover .ext-link-arrow {
+    opacity: 1;
+    transform: translateX(4px);
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--ink);
+    border-top: 1px solid rgba(255,255,255,0.06);
+    padding: 1.5rem 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer p {
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.25);
+    letter-spacing: 0.05em;
+  }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeIn {
+    to { opacity: 1; }
+  }
+
+  /* ── MEDIA ── */
+  #media {
+    background: var(--bg);
+    border-top: 1px solid var(--rule);
+  }
+
+  .media-logos {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+    border: 1px solid var(--rule);
+    background: var(--white);
+    overflow: hidden;
+  }
+
+  .media-logo-item {
+    flex: 1;
+    min-width: 120px;
+    padding: 1.8rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    border-right: 1px solid var(--rule);
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+
+  .media-logo-item:last-child { border-right: none; }
+
+  .media-logo-item:hover { background: var(--bg); }
+
+  .media-logo-name {
+    font-family: var(--serif);
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--ink);
+    letter-spacing: -0.02em;
+  }
+
+  .media-logo-name.vg { color: #e8000d; }
+  .media-logo-name.dagbladet { color: #d4000f; }
+  .media-logo-name.nrk { color: #000; }
+  .media-logo-name.aftenposten { color: #002147; }
+  .media-logo-name.tv2 { color: #003087; }
+
+  .media-logo-type {
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+  }
+
+  .media-section-title {
+    font-family: var(--serif);
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: var(--ink);
+    margin-bottom: 1.5rem;
+  }
+
+  .media-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .media-card {
+    background: var(--white);
+    padding: 1.8rem 2rem;
+    border-left: 2px solid var(--rule);
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    transition: border-color 0.2s, transform 0.2s;
+    text-decoration: none;
+  }
+
+  .media-card:hover {
+    border-left-color: var(--accent);
+    transform: translateX(3px);
+  }
+
+  .media-card-outlet {
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 500;
+  }
+
+  .media-card-title {
+    font-family: var(--serif);
+    font-size: 1.05rem;
+    font-weight: 400;
+    color: var(--ink);
+    line-height: 1.4;
+  }
+
+  .media-card-desc {
+    font-size: 0.82rem;
+    color: var(--ink-light);
+    line-height: 1.5;
+  }
+
+  .media-card-placeholder {
+    font-size: 0.75rem;
+    color: var(--ink-faint);
+    font-style: italic;
+    margin-top: 0.2rem;
+  }
+
+  .podcast-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .podcast-card {
+    background: var(--ink);
+    color: var(--white);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+
+  .podcast-card:hover { background: #2d2d2d; }
+
+  .podcast-card-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .podcast-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+  }
+
+  .podcast-icon.nrk-icon { background: #fff; color: #000; font-weight: 700; font-family: var(--sans); font-size: 0.75rem; letter-spacing: 0.05em; }
+  .podcast-icon.linnea-icon { background: #c8a96e; }
+
+  .podcast-outlet {
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    margin-bottom: 0.1rem;
+  }
+
+  .podcast-show {
+    font-family: var(--serif);
+    font-size: 1rem;
+    color: var(--white);
+  }
+
+  .podcast-title {
+    font-family: var(--serif);
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--white);
+    line-height: 1.3;
+  }
+
+  .podcast-desc {
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.55);
+    line-height: 1.55;
+  }
+
+  .podcast-listen {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent-muted);
+    margin-top: auto;
+    transition: color 0.2s;
+  }
+
+  .podcast-card:hover .podcast-listen { color: #6aaa85; }
+
+  .forsker-gp-card {
+    display: flex;
+    gap: 2rem;
+    background: var(--white);
+    padding: 2rem 2.5rem;
+    border-top: 2px solid var(--accent);
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+    align-items: center;
+  }
+
+  .forsker-gp-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.07);
+  }
+
+  .forsker-gp-left {
+    flex-shrink: 0;
+    width: 64px;
+    height: 64px;
+    background: var(--accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .forsker-gp-play {
+    color: white;
+    font-size: 1.2rem;
+    padding-left: 4px;
+  }
+
+  .forsker-gp-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .forsker-gp-label {
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 500;
+  }
+
+  .forsker-gp-title {
+    font-family: var(--serif);
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--ink);
+  }
+
+  .forsker-gp-desc {
+    font-size: 0.85rem;
+    color: var(--ink-light);
+    line-height: 1.6;
+    max-width: 65ch;
+  }
+
+  .forsker-gp-cta {
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-top: 0.3rem;
+  }
+
+  /* ── MOBILE ── */
+  @media (max-width: 900px) {
+    nav {
+      padding: 0.9rem 1.2rem;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .nav-links {
+      gap: 0.8rem;
+      flex-wrap: wrap;
+    }
+    .nav-links a { font-size: 0.7rem; }
+    .nav-name { font-size: 1rem; }
+
+    .hero {
+      grid-template-columns: 1fr;
+      min-height: auto;
+    }
+    .hero-text {
+      padding: 5rem 1.5rem 2.5rem;
+      order: 2;
+    }
+    .hero-image-panel {
+      display: flex;
+      order: 1;
+      min-height: 280px;
+      background: var(--bg-warm);
+    }
+    .hero-photo {
+      width: 200px;
+      height: 200px;
+    }
+
+    section { padding: 4rem 1.5rem; }
+    .about-grid,
+    .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .projects-grid { grid-template-columns: 1fr; }
+    .groups-list { grid-template-columns: 1fr; }
+    .media-grid,
+    .podcast-cards { grid-template-columns: 1fr; }
+    .media-logos { flex-direction: row; flex-wrap: wrap; }
+    .media-logo-item { min-width: 100px; border-bottom: 1px solid var(--rule); }
+    .forsker-gp-card { flex-direction: column; gap: 1rem; }
+    footer { padding: 1.5rem; flex-direction: column; gap: 0.5rem; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-name">Ragnhild Bø</a>
+  <div class="nav-right">
+  <ul class="nav-links">
+    <li><a href="#om">About</a></li>
+    <li><a href="#forskning">Research</a></li>
+    <li><a href="#undervisning">Teaching</a></li>
+    <li><a href="#publikasjoner">Publications</a></li>
+    <li><a href="#media">Media</a></li>
+    <li><a href="#kontakt">Contact</a></li>
+  </ul>
+  <span class="lang-switch"><a href="../" hreflang="no" lang="no">NO</a> | <span class="current">EN</span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero" style="position:relative;">
+  <div class="hero-text">
+    <div class="hero-label">Department of Psychology · University of Oslo</div>
+    <h1 class="hero-name">Ragnhild <em>Bø</em></h1>
+    <p class="hero-title">Researcher · PhD in Clinical Neuropsychology · Clinical Psychologist</p>
+    <p class="hero-desc">My research addresses the links between cognitive function and mental health, with a particular focus on depression, alcohol use, and the potential of digital interventions for treatment and prevention.</p>
+    <div class="hero-cta">
+      <a href="#forskning" class="btn-primary">Current projects</a>
+      <a href="#publikasjoner" class="btn-secondary">Publications</a>
+    </div>
+  </div>
+  <div class="hero-image-panel">
+    <img src="../ragnhild-bo.png" alt="Ragnhild Bø" class="hero-photo">
+  </div>
+</div>
+
+<!-- OM MEG -->
+<section id="om">
+  <div class="section-label">Background</div>
+  <h2 class="section-title">About</h2>
+  <div class="about-grid">
+    <div class="about-text">
+      <p>I am a researcher at the Department of Psychology, University of Oslo, in the Section for Cognitive and Clinical Neuroscience. My work focuses on how the brain&rsquo;s cognitive systems - attention, executive functions and emotion regulation - affect mental health and treatment outcomes.</p>
+      <p>A central part of my research concerns <em>attention bias modification</em> (ABM) - training programmes that aim to change attentional biases in people with depression. I also work on digital self-help tools for reducing alcohol use, and on the cognitive consequences of COVID-19.</p>
+      <p>I have a clinical background as a psychologist at the Norwegian Labour and Welfare Administration&rsquo;s (NAV) competence centre for vocational rehabilitation, with experience of complex neuropsychological assessments.</p>
+      <p>In 2026 I completed the Training Programme for Young Research Leaders, a national leadership programme run by the psychology departments at the Universities of Bergen and Oslo, NTNU and UiT The Arctic University of Norway. Over five workshops in one year, it covered career development as a research leader, communication and research strategy, leading research groups and networks, and external funding.</p>
+    </div>
+    <div class="about-meta">
+      <div class="meta-group">
+        <h4>Research interests</h4>
+        <div class="tag-list">
+          <span class="tag">Clinical neuropsychology</span>
+          <span class="tag">Depression</span>
+          <span class="tag">Executive functions</span>
+          <span class="tag">Emotion regulation</span>
+          <span class="tag">Alcohol and cognition</span>
+          <span class="tag">Digital interventions</span>
+          <span class="tag">COVID-19 and cognitive function</span>
+          <span class="tag">Transdiagnostic processes</span>
+        </div>
+      </div>
+      <div class="meta-group">
+        <h4>Career</h4>
+        <ul class="cv-list">
+          <li>
+            <span class="cv-year">2024 →</span>
+            <span class="cv-desc">Researcher, Department of Psychology, University of Oslo</span>
+          </li>
+          <li>
+            <span class="cv-year">2018–2024</span>
+            <span class="cv-desc">Postdoctoral Research Fellow, Department of Psychology, University of Oslo</span>
+          </li>
+          <li>
+            <span class="cv-year">2012–2017</span>
+            <span class="cv-desc">PhD Research Fellow in Clinical Neuropsychology, University of Oslo (PhD 2017)</span>
+          </li>
+          <li>
+            <span class="cv-year">2011–2013</span>
+            <span class="cv-desc">Clinical Psychologist, vocational rehabilitation, NAV</span>
+          </li>
+          <li>
+            <span class="cv-year">2006–2010</span>
+            <span class="cv-desc">Professional degree in psychology (Cand.psychol.), University of Oslo</span>
+          </li>
+        </ul>
+      </div>
+      <div class="meta-group">
+        <h4>Leadership development</h4>
+        <ul class="cv-list">
+          <li>
+            <span class="cv-year">2026</span>
+            <span class="cv-desc">Training Programme for Young Research Leaders (YFL), Universities of Bergen and Oslo, NTNU and UiT. Five workshops over one year: career development, communication and research strategy, leading research groups and networks, external funding.</span>
+          </li>
+        </ul>
+      </div>
+      <div class="meta-group">
+        <h4>Service</h4>
+        <ul class="cv-list">
+          <li><span class="cv-year">2019 →</span><span class="cv-desc">Member, Ethics Committee, Department of Psychology, University of Oslo</span></li>
+          <li><span class="cv-year">2019 →</span><span class="cv-desc">Member of several appointment committees for permanent and temporary positions, Department of Psychology, University of Oslo</span></li>
+          <li><span class="cv-year">2016–2017</span><span class="cv-desc">Deputy Head (2016) and Board Member (2017), PsyDoc, interest group for temporary academic staff at the University of Oslo</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORSKNING -->
+<section id="forskning">
+  <div class="section-label">Current work</div>
+  <h2 class="section-title">Research</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <h3>DEPTREAT</h3>
+      <p>Does training positive attention help in depression? A randomised controlled trial of attention bias modification as a treatment tool for depression.</p>
+    </div>
+    <div class="project-card">
+      <h3>DigiTIFF</h3>
+      <p>Digital interventions for relapse prevention. The project explores how technology can support patients with recurrent depression between treatment episodes.</p>
+    </div>
+    <div class="project-card">
+      <h3>Affective bias and rumination</h3>
+      <p>The effect of affective bias modification on transdiagnostic rumination and symptoms. A randomised, double-blind, placebo-controlled trial.</p>
+    </div>
+    <div class="project-card">
+      <h3>TRAINCOVID</h3>
+      <p>Cognitive rehabilitation after COVID-19. A randomised controlled trial testing cognitive training as a treatment for persistent cognitive problems after SARS-CoV-2 infection.</p>
+    </div>
+    <div class="project-card">
+      <h3>The DRIVE network</h3>
+      <p>Interdisciplinary depression research network at the University of Oslo. Contributing to work packages on outcomes and mechanisms, treatment, and biomarkers and pathological mechanisms.</p>
+    </div>
+    <div class="project-card">
+      <h3>Digital self-help tools</h3>
+      <p>Exploring the potential and limitations of digital tools for reducing alcohol use in primary care, with an emphasis on accessibility and usability.</p>
+    </div>
+  </div>
+
+  <div class="research-groups">
+    <h3>Research groups</h3>
+    <div class="groups-list">
+      <div class="group-item">DRIVE Work Package 1: Outcome and Mechanisms</div>
+      <div class="group-item">DRIVE Work Package 2: Treatment</div>
+      <div class="group-item">DRIVE Work Package 3: Biomarkers and Pathological Mechanisms</div>
+      <div class="group-item">Clinical Neuroscience Research Group (CNRG)</div>
+      <div class="group-item">Psychotherapy for Adults</div>
+    </div>
+  </div>
+</section>
+
+<!-- UNDERVISNING -->
+<section id="undervisning">
+  <div class="section-label">Teaching and supervision</div>
+  <h2 class="section-title">Teaching</h2>
+  <div class="about-grid">
+    <div class="about-text">
+      <p>I have taught at the Department of Psychology, University of Oslo, since 2012 as a lecturer, seminar leader, course teacher and examiner on psychology courses at bachelor&rsquo;s and master&rsquo;s level. I have also supervised bachelor&rsquo;s and master&rsquo;s theses.</p>
+      <p>I have completed the University of Oslo&rsquo;s introductory module in university pedagogy (120 hours) and serve as external examiner for the master&rsquo;s programme in mental health work at Oslo Metropolitan University.</p>
+    </div>
+    <div class="about-meta">
+      <div class="meta-group">
+        <h4>Teaching and examination</h4>
+        <ul class="cv-list">
+          <li><span class="cv-year">2012 →</span><span class="cv-desc">Lecturer, seminar leader, course teacher and examiner, bachelor&rsquo;s and master&rsquo;s level, Department of Psychology, University of Oslo</span></li>
+          <li><span class="cv-year">2012 →</span><span class="cv-desc">Supervisor of bachelor&rsquo;s and master&rsquo;s theses, University of Oslo</span></li>
+          <li><span class="cv-year">2019 →</span><span class="cv-desc">External examiner, master&rsquo;s programme in mental health work, Oslo Metropolitan University</span></li>
+        </ul>
+      </div>
+      <div class="meta-group">
+        <h4>University pedagogy</h4>
+        <ul class="cv-list">
+          <li><span class="cv-year">2022</span><span class="cv-desc">Writing to learn, large module (30 h) and small module (15 h), University of Oslo</span></li>
+          <li><span class="cv-year">2020</span><span class="cv-desc">Introductory module in university pedagogy (120 h), University of Oslo</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PUBLIKASJONER -->
+<section id="publikasjoner">
+  <div class="section-label">Scientific output</div>
+  <h2 class="section-title">Publications</h2>
+
+  <div class="pub-tabs">
+    <button class="pub-tab active" onclick="showTab('recent')">Recent (2023–2026)</button>
+    <button class="pub-tab" onclick="showTab('earlier')">Earlier work</button>
+  </div>
+
+  <div id="recent" class="pub-list active">
+
+    <div class="pub-item">
+      <div class="pub-year">2026</div>
+      <div class="pub-content">
+        <div class="pub-authors">Hagen, H.S.; Klonteig, S.; Røssberg, J.I.; Jonassen, R.; Landrø, N.I. &amp; Bø, R.</div>
+        <div class="pub-title">Fronto–Parietal EEG asymmetry interactions predict negative attention bias: A secondary data analysis</div>
+        <div class="pub-journal">Cognitive, Affective, &amp; Behavioral Neuroscience.</div>
+        <a href="https://doi.org/10.3758/s13415-026-01466-6" class="pub-doi" target="_blank">doi:10.3758/s13415-026-01466-6</a>
+      </div>
+    </div>
+
+    <div class="pub-item">
+      <div class="pub-year">2026</div>
+      <div class="pub-content">
+        <div class="pub-authors">Jonassen, R.; Øverli, Ø.; Hilland, E.; Nilsen, H.; Esbensen, Q.Y.; Lirussi, L. et al., incl. Bø, R.</div>
+        <div class="pub-title">Serotonin transporter polymorphism (5-HTTLPR) is associated with post-awakening cortisol measures in previous depression</div>
+        <div class="pub-journal">Comprehensive Psychoneuroendocrinology. 27, 1–7.</div>
+        <a href="https://doi.org/10.1016/j.cpnec.2026.100363" class="pub-doi" target="_blank">doi:10.1016/j.cpnec.2026.100363</a>
+      </div>
+    </div>
+
+    <div class="pub-item">
+      <div class="pub-year">2026</div>
+      <div class="pub-content">
+        <div class="pub-authors">Brunvoll, S.H.; Fagerland, M.W.; Nygaard, A.B.; Ellingjord-Dale, M.; Istre, M.S.; Landrø, N.I. et al., incl. Bø, R.</div>
+        <div class="pub-title">Long COVID symptoms before and 3-35 months after SARS-CoV-2 infection in a Norwegian prospective cohort study, symptoms over the pandemic, and different virus variants</div>
+        <div class="pub-journal">International Journal of Infectious Diseases. 170.</div>
+        <a href="https://doi.org/10.1016/j.ijid.2026.108822" class="pub-doi" target="_blank">doi:10.1016/j.ijid.2026.108822</a>
+      </div>
+    </div>
+
+    <div class="pub-item">
+      <div class="pub-year">2026</div>
+      <div class="pub-content">
+        <div class="pub-authors">Magnúsdóttir, I.; Nygaard, A.B.; Hoffart, A.; Murphy, G.; Kõiv, K.; Barker, M.M. et al., incl. Bø, R.</div>
+        <div class="pub-title">Acute COVID-19 severity and impaired cognitive function up to 32 months after diagnosis: an observational study</div>
+        <div class="pub-journal">BMC Medicine. 24(1).</div>
+        <a href="https://doi.org/10.1186/s12916-026-04856-2" class="pub-doi" target="_blank">doi:10.1186/s12916-026-04856-2</a>
+      </div>
+    </div>
+
+    <div class="pub-item">
+      <div class="pub-year">2025</div>
+      <div class="pub-content">
+        <div class="pub-authors">Hagen, H.S.; Røssberg, J.I.; Harmer, C.; Jonassen, R.; Landrø, N.I. & Bø, R.</div>
+        <div class="pub-title">Attention bias at baseline does not moderate the effect of attention bias modification for residual depressive symptoms</div>
+        <div class="pub-journal">Journal of Behavior Therapy and Experimental Psychiatry. 90, 1–8.</div>
+        <a href="https://doi.org/10.1016/j.jbtep.2025.102073" class="pub-doi" target="_blank">doi:10.1016/j.jbtep.2025.102073</a>
+      </div>
+    </div>
+
+    <div class="pub-item">
+      <div class="pub-year">2025</div>
+      <div class="pub-content">
+        <div class="pub-authors">Bø, R. & Skule, A.C.</div>
+        <div class="pub-title">Digitale selvhjelpsløsninger for alkoholreduksjon</div>
+        <div class="pub-journal">Journal of the Norwegian Psychological Association. 1, 2–8.</div>
+        <a href="https://www.psykologtidsskriftet.no/artikkel/2025as12ae-Digitale-selvhjelpslosninger-for-alkoholreduksjon" class="pub-doi" target="_blank">Read the article</a>
+      </div>
+    </div>
+
+    <div class="pub-item">
+      <div class="pub-year">2025</div>
+      <div class="pub-content">
+        <div class="pub-authors">Bø, R.; Jonassen, R.; Harmer, C.; Øverli, Ø.; et al.</div>
+        <div class="pub-title">5-HTTLPR does not moderate the effect of attention bias modification for depression: a randomized sham-controlled trial</div>
+        <div class="pub-journal">Translational Psychiatry. 15, 1–6.</div>
+        <a href="https://doi.org/10.1038/s41398-025-03581-3" class="pub-doi" target="_blank">doi:10.1038/s41398-025-03581-3</a>
+      </div>
+    </div>
+
+    <div class="pub-item">
+      <div class="pub-year">2025</div>
+      <div class="pub-content">
+        <div class="pub-authors">Harrer, M.; Sprenger, A.A.; Illing, S.; Adriaanse, M.C.; Albert, S.M.; Allart, E. et al., incl. Bø, R.</div>
+        <div class="pub-title">Psychological intervention in individuals with subthreshold depression: individual participant data meta-analysis of treatment effects and moderators</div>
+        <div class="pub-journal">British Journal of Psychiatry.</div>
+        <a href="https://doi.org/10.1192/bjp.2025.56" class="pub-doi" target="_blank">doi:10.1192/bjp.2025.56</a>
+      </div>
+    </div>
+
+    <div class="pub-item">
+      <div class="pub-year">2024</div>
+      <div class="pub-content">
+        <div class="pub-authors">Bø, R.; Kraft, B.; Skilbrei, A.; Jonassen, R.; Harmer, C. & Landrø, N.I.</div>
+        <div class="pub-title">Inhibition moderates the effect of attentional bias modification for reducing residual depressive symptoms: A randomized sham-controlled clinical trial</div>
+        <div class="pub-journal">Journal of Behavior Therapy and Experimental Psychiatry. 85(101982).</div>
+        <a href="https://doi.org/10.1016/j.jbtep.2024.101982" class="pub-doi" target="_blank">doi:10.1016/j.jbtep.2024.101982</a>
+      </div>
+    </div>
+
+    <div class="pub-item">
+      <div class="pub-year">2024</div>
+      <div class="pub-content">
+        <div class="pub-authors">Kraft, B.; Bø, R.; Harmer, C. & Landrø, N.I.</div>
+        <div class="pub-title">The effect of attentional bias modification on positive affect dynamics</div>
+        <div class="pub-journal">Scientific Reports. 14(1), 23628–23628.</div>
+        <a href="https://doi.org/10.1038/s41598-024-74855-x" class="pub-doi" target="_blank">doi:10.1038/s41598-024-74855-x</a>
+      </div>
+    </div>
+
+    <div class="pub-item">
+      <div class="pub-year">2024</div>
+      <div class="pub-content">
+        <div class="pub-authors">Bø, R.; Kraft, B.; Jonassen, R.; Joormann, J.; Harmer, C. & Landrø, N.I.</div>
+        <div class="pub-title">The effect of ABM on attentional networks and stress-induced emotional reactivity in a mixed clinical sample with depression: A randomized sham-controlled trial</div>
+        <div class="pub-journal">Neuroscience Applied. 3.</div>
+        <a href="https://doi.org/10.1016/j.nsa.2024.104091" class="pub-doi" target="_blank">doi:10.1016/j.nsa.2024.104091</a>
+      </div>
+    </div>
+
+    <div class="pub-item">
+      <div class="pub-year">2024</div>
+      <div class="pub-content">
+        <div class="pub-authors">Hagen, H.S.; Røssberg, J.I.; Harmer, C.; Jonassen, R.; Landrø, N.I. & Bø, R.</div>
+        <div class="pub-title">Does rumination moderate the effect of attention bias modification for depressive symptoms?</div>
+        <div class="pub-journal">Journal of Affective Disorders Reports. 17.</div>
+        <a href="https://doi.org/10.1016/j.jadr.2024.100824" class="pub-doi" target="_blank">doi:10.1016/j.jadr.2024.100824</a>
+      </div>
+    </div>
+
+    <div class="pub-item">
+      <div class="pub-year">2023</div>
+      <div class="pub-content">
+        <div class="pub-authors">Bø, R.; Kraft, B.; Joormann, J.; Jonassen, R.; Harmer, C. & Landrø, N.I.</div>
+        <div class="pub-title">Cognitive predictors of stress-induced mood malleability in depression</div>
+        <div class="pub-journal">Anxiety, Stress, & Coping. 37(2), 278–292.</div>
+        <a href="https://doi.org/10.1080/10615806.2023.2255531" class="pub-doi" target="_blank">doi:10.1080/10615806.2023.2255531</a>
+      </div>
+    </div>
+
+    <div class="pub-item">
+      <div class="pub-year">2023</div>
+      <div class="pub-content">
+        <div class="pub-authors">Bø, R.; Kraft, B.; Pedersen, M.L.; Joormann, J.; Jonassen, R. & Osnes, K. et al.</div>
+        <div class="pub-title">The effect of attention bias modification on depressive symptoms in a comorbid sample: a randomized controlled trial</div>
+        <div class="pub-journal">Psychological Medicine. 53(13), 6389–6396.</div>
+        <a href="https://doi.org/10.1017/S0033291722003956" class="pub-doi" target="_blank">doi:10.1017/S0033291722003956</a>
+      </div>
+    </div>
+
+    <div class="pub-item">
+      <div class="pub-year">2023</div>
+      <div class="pub-content">
+        <div class="pub-authors">Bø, R.; Kraft, B.; Jonassen, R.; Pedersen, M.L.; Harmer, C. & Landrø, N.I.</div>
+        <div class="pub-title">The long-term effects of ABM on symptom severity in patients with recurrent depression: A randomized sham-controlled trial</div>
+        <div class="pub-journal">Journal of Affective Disorders. 340, 886–892.</div>
+        <a href="https://doi.org/10.1016/j.jad.2023.08.024" class="pub-doi" target="_blank">doi:10.1016/j.jad.2023.08.024</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="earlier" class="pub-list">
+
+    <div class="pub-item">
+      <div class="pub-year">2021</div>
+      <div class="pub-content">
+        <div class="pub-authors">Bø, R.; Kraft, B.; Jonassen, R.; Harmer, C.; Hilland, E. & Stiles, T.C. et al.</div>
+        <div class="pub-title">Symptom severity moderates the outcome of attention bias modification for depression: An exploratory study</div>
+        <div class="pub-journal">Journal of Psychiatric Research. 138, 528–534.</div>
+        <a href="https://doi.org/10.1016/j.jpsychires.2021.04.027" class="pub-doi" target="_blank">doi:10.1016/j.jpsychires.2021.04.027</a>
+      </div>
+    </div>
+
+    <div class="pub-item">
+      <div class="pub-year">2021</div>
+      <div class="pub-content">
+        <div class="pub-authors">Søraas, A.V.; Bø, R.; Kalleberg, K.T.; Støer, N.C.; Ellingjord-Dale, M. & Landrø, N.I.</div>
+        <div class="pub-title">Self-reported Memory Problems 8 Months After COVID-19 Infection</div>
+        <div class="pub-journal">JAMA Network Open. 4(7).</div>
+        <a href="https://doi.org/10.1001/jamanetworkopen.2021.18717" class="pub-doi" target="_blank">doi:10.1001/jamanetworkopen.2021.18717</a>
+      </div>
+    </div>
+
+    <div class="pub-item">
+      <div class="pub-year">2019</div>
+      <div class="pub-content">
+        <div class="pub-authors">Bø, R.</div>
+        <div class="pub-title">Kognitiv rehabilitering ved alkoholavhengighet: supplement til ordinær behandling?</div>
+        <div class="pub-journal">Journal of the Norwegian Psychological Association. 56(2), 88–98.</div>
+      </div>
+    </div>
+
+    <div class="pub-item">
+      <div class="pub-year">2017</div>
+      <div class="pub-content">
+        <div class="pub-authors">Bø, R.; Billieux, J.; Gjerde, L.C.; Eilertsen, E.M. & Landrø, N.I.</div>
+        <div class="pub-title">Do executive functions predict binge-drinking patterns? Evidence from a longitudinal study in young adulthood</div>
+        <div class="pub-journal">Frontiers in Psychology. 8.</div>
+        <a href="https://doi.org/10.3389/fpsyg.2017.00489" class="pub-doi" target="_blank">doi:10.3389/fpsyg.2017.00489</a>
+      </div>
+    </div>
+
+    <div class="pub-item">
+      <div class="pub-year">2016</div>
+      <div class="pub-content">
+        <div class="pub-authors">Bø, R.; Billieux, J. & Landrø, N.I.</div>
+        <div class="pub-title">Binge drinking is characterized by decisions favoring positive and discounting negative consequences</div>
+        <div class="pub-journal">Addiction Research and Theory. 24(6), 499–506.</div>
+        <a href="https://doi.org/10.3109/16066359.2016.1174215" class="pub-doi" target="_blank">doi:10.3109/16066359.2016.1174215</a>
+      </div>
+    </div>
+
+    <div class="pub-item">
+      <div class="pub-year">2016</div>
+      <div class="pub-content">
+        <div class="pub-authors">Bø, R.; Billieux, J. & Landrø, N.I.</div>
+        <div class="pub-title">Which facets of impulsivity predict binge drinking?</div>
+        <div class="pub-journal">Addictive Behaviors Reports. 3, 43–47.</div>
+        <a href="https://doi.org/10.1016/j.abrep.2016.03.001" class="pub-doi" target="_blank">doi:10.1016/j.abrep.2016.03.001</a>
+      </div>
+    </div>
+
+    <div class="pub-item">
+      <div class="pub-year">2015</div>
+      <div class="pub-content">
+        <div class="pub-authors">Bø, R.; Aker, M.; Billieux, J. & Landrø, N.I.</div>
+        <div class="pub-title">Binge drinkers are fast, able to stop – But they fail to adjust</div>
+        <div class="pub-journal">Journal of the International Neuropsychological Society. 22(1), 38–46.</div>
+        <a href="https://doi.org/10.1017/S1355617715001204" class="pub-doi" target="_blank">doi:10.1017/S1355617715001204</a>
+      </div>
+    </div>
+
+    <div class="pub-item">
+      <div class="pub-year">2013</div>
+      <div class="pub-content">
+        <div class="pub-authors">Kjellèn, E. & Bø, R.</div>
+        <div class="pub-title">Udiagnostiserte synsendringer etter ervervet hjerneskade</div>
+        <div class="pub-journal">Journal of the Norwegian Psychological Association. 50(12), 1163–1167.</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- I MEDIA -->
+<section id="media">
+  <div class="section-label">Public engagement</div>
+  <h2 class="section-title">Media</h2>
+
+  <!-- Medielogoer -->
+  <div class="media-logos">
+    <div class="media-logo-item">
+      <span class="media-logo-name vg">VG</span>
+      <span class="media-logo-type">Newspaper</span>
+    </div>
+    <div class="media-logo-item">
+      <span class="media-logo-name dagbladet">Dagbladet</span>
+      <span class="media-logo-type">Newspaper</span>
+    </div>
+    <div class="media-logo-item">
+      <span class="media-logo-name nrk">NRK</span>
+      <span class="media-logo-type">Radio · TV · Podcast · P3</span>
+    </div>
+    <div class="media-logo-item">
+      <span class="media-logo-name aftenposten">Aftenposten</span>
+      <span class="media-logo-type">Newspaper</span>
+    </div>
+    <div class="media-logo-item">
+      <span class="media-logo-name tv2">TV 2</span>
+      <span class="media-logo-type">TV</span>
+    </div>
+  </div>
+
+  <!-- Artikler -->
+  <h3 class="media-section-title">Selected articles and appearances</h3>
+  <div class="media-grid">
+
+    <a href="https://hdl.handle.net/11250/5346232" target="_blank" class="media-card">
+      <span class="media-card-outlet">Dagens Medisin · 2026</span>
+      <span class="media-card-title">Forskning i allmennpraksis er nødvendig og etterspurt - men har mange utfordringer</span>
+      <span class="media-card-desc">Op-ed (in Norwegian) on research in general practice: needed and in demand, but facing many challenges. First author, with Røssberg, Klovning, Landrø, Hagen, Andreassen et al.</span>
+    </a>
+
+    <a href="https://www.aftenposten.no/meninger/debatt/i/gwnwwB/kan-spraakmodellene-behandle-mentale-helseplager-dette-sier-forskningen" target="_blank" class="media-card">
+      <span class="media-card-outlet">Aftenposten · Op-ed · May 2025</span>
+      <span class="media-card-title">ChatGPT som fremtidens terapeut: Hva sier forskningen?</span>
+      <span class="media-card-desc">Op-ed (in Norwegian) on ChatGPT as a future therapist: the potential and limits of language models in treating mental health problems, and what the research actually shows.</span>
+    </a>
+
+    <a href="https://p3.no/myter-om-fest-og-alkohol/" target="_blank" class="media-card">
+      <span class="media-card-outlet">NRK P3</span>
+      <span class="media-card-title">Fra bunnslam til ølbriller: Stemmer disse festmytene?</span>
+      <span class="media-card-desc">As expert commentator, Ragnhild tests common party myths about alcohol, including the research behind the &ldquo;beer goggles&rdquo; effect (in Norwegian).</span>
+    </a>
+
+  </div>
+
+  <!-- Psykologtidsskriftet -->
+  <h3 class="media-section-title" style="margin-top:3rem;">Journal of the Norwegian Psychological Association</h3>
+  <p style="font-size:0.88rem; color:var(--ink-light); margin-bottom:1.5rem; max-width:60ch;">Tidsskrift for Norsk psykologforening is a peer-reviewed (level 1) journal read by practising psychologists, clinicians and academic communities across Norway. Articles in Norwegian.</p>
+  <div class="media-grid">
+
+    <a href="https://www.psykologtidsskriftet.no/artikkel/2025as12ae-Digitale-selvhjelpslosninger-for-alkoholreduksjon" target="_blank" class="media-card">
+      <span class="media-card-outlet">Article · December 2025</span>
+      <span class="media-card-title">Digitale selvhjelpsløsninger for alkoholreduksjon</span>
+      <span class="media-card-desc">Digital self-help for reducing alcohol use: how digital tools can make help for problem drinking more accessible.</span>
+    </a>
+
+    <a href="https://psykologtidsskriftet.no/asset/article/2024/04/Groftefyll-i-russetiden/Groftefyll-i-russetiden.pdf" target="_blank" class="media-card">
+      <span class="media-card-outlet">Op-ed · April 2024</span>
+      <span class="media-card-title">Grøftefyll i russetiden</span>
+      <span class="media-card-desc">Binge drinking in the Norwegian school-leavers&rsquo; celebration: psychologists need to reach young people with knowledge of warning signs and consequences.</span>
+    </a>
+
+    <a href="https://www.psykologtidsskriftet.no/asset/article/2017/09/Fylla-og-den-unge-hjernen/Fylla-og-den-unge-hjernen.pdf" target="_blank" class="media-card">
+      <span class="media-card-outlet">From the research · September 2017</span>
+      <span class="media-card-title">Fylla og den unge hjernen</span>
+      <span class="media-card-desc">Binge drinking and the young brain: what the research shows about consequences for brain development.</span>
+    </a>
+
+    <a href="https://psykologtidsskriftet.no/asset/article/2019/01/Kognitiv-rehabilitering-ved-alkoholavhengighet--supplement-til-ordin%C3%A6r-behandling-/Kognitiv-rehabilitering-ved-alkoholavhengighet--supplement-til-ordin%C3%A6r-behandling-.pdf" target="_blank" class="media-card">
+      <span class="media-card-outlet">Peer-reviewed article · February 2019</span>
+      <span class="media-card-title">Kognitiv rehabilitering ved alkoholavhengighet</span>
+      <span class="media-card-desc">Can cognitive remediation be a useful supplement to standard treatment of alcohol use disorder?</span>
+    </a>
+
+  </div>
+
+  <!-- Podcaster -->
+  <h3 class="media-section-title">Podcasts</h3>
+  <div class="podcast-cards" style="grid-template-columns: 1fr;">
+
+    <a href="https://radio.nrk.no/podkast/lev_vel/l_b02824c4-1c8f-4549-a824-c41c8fb5492c" target="_blank" class="podcast-card">
+      <div class="podcast-card-header">
+        <div class="podcast-icon nrk-icon">NRK</div>
+        <div>
+          <div class="podcast-outlet">NRK Radio</div>
+          <div class="podcast-show">Lev vel med Linnéa Myhre</div>
+        </div>
+      </div>
+      <div class="podcast-title">What does alcohol do to our bodies?</div>
+      <div class="podcast-desc">As expert guest on NRK&rsquo;s health podcast, Ragnhild explains what alcohol does to the body and to our DNA, and what the research actually says (in Norwegian).</div>
+      <span class="podcast-listen">Listen to the episode →</span>
+    </a>
+
+  </div>
+
+  <!-- Forsker Grand Prix -->
+  <h3 class="media-section-title" style="margin-top:3rem;">On stage</h3>
+  <a href="https://www.youtube.com/watch?v=fJJQMhXOvig" target="_blank" class="forsker-gp-card">
+    <div class="forsker-gp-left">
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M27.4 7.6a3.5 3.5 0 0 0-2.46-2.48C22.76 4.5 14 4.5 14 4.5s-8.76 0-10.94.62A3.5 3.5 0 0 0 .6 7.6C0 9.8 0 14.4 0 14.4s0 4.6.6 6.8a3.5 3.5 0 0 0 2.46 2.48C5.24 24.3 14 24.3 14 24.3s8.76 0 10.94-.62a3.5 3.5 0 0 0 2.46-2.48C28 19 28 14.4 28 14.4s0-4.6-.6-6.8z" fill="white" opacity="0.9"/>
+        <path d="M11.2 18.7l7.3-4.3-7.3-4.3v8.6z" fill="#1a1a1a"/>
+      </svg>
+    </div>
+    <div class="forsker-gp-content">
+      <span class="forsker-gp-label">Researcher Grand Prix · Norwegian Science Week 2016</span>
+      <h4 class="forsker-gp-title">Binge drinking and the brain</h4>
+      <p class="forsker-gp-desc">Forsker Grand Prix is a national science communication competition in which researchers present their work to a general audience in under ten minutes. Ragnhild presented her research on alcohol and brain damage to the audience in Oslo (in Norwegian).</p>
+      <span class="forsker-gp-cta">Watch on YouTube →</span>
+    </div>
+  </a>
+
+</section>
+
+<!-- KONTAKT -->
+<section id="kontakt">
+  <div class="section-label">Get in touch</div>
+  <h2 class="section-title">Contact</h2>
+  <div class="contact-grid">
+    <div class="contact-info">
+      <p style="color:var(--white); font-size:1.05rem; margin-bottom:1rem;">I am open to new positions and welcome enquiries about relevant opportunities.</p>
+      <p>I am also available for research collaboration, media enquiries and speaking engagements related to my research.</p>
+      <p style="font-size:0.88rem; padding: 1rem 1.2rem; border-left: 2px solid var(--accent-muted); color: rgba(255,255,255,0.55); line-height:1.7; margin-bottom: 1rem;">I am happy to act as an expert commentator on depression, alcohol and cognitive health, digital health interventions, and artificial intelligence in mental health care.</p>
+      <div class="contact-details">
+        <div class="contact-row">
+          <span class="contact-label">Email</span>
+          <span class="contact-value"><a href="mailto:ragnhild.bo@psykologi.uio.no">ragnhild.bo@psykologi.uio.no</a></span>
+        </div>
+        <div class="contact-row">
+          <span class="contact-label">Phone</span>
+          <span class="contact-value">+47 419 04 595</span>
+        </div>
+        <div class="contact-row">
+          <span class="contact-label">Address</span>
+          <span class="contact-value">Forskningsveien 3A, Harald Schjelderups hus, 0373 Oslo, Norway</span>
+        </div>
+        <div class="contact-row">
+          <span class="contact-label">Office</span>
+          <span class="contact-value">S01-24 · By appointment</span>
+        </div>
+      </div>
+    </div>
+    <div class="contact-links">
+      <a href="https://www.sv.uio.no/psi/english/people/academic/ragb/" class="ext-link" target="_blank">
+        University of Oslo profile
+        <span class="ext-link-arrow">→</span>
+      </a>
+      <a href="https://nva.sikt.no/research-profile/5327" class="ext-link" target="_blank">
+        Norwegian national research archive (NVA)
+        <span class="ext-link-arrow">→</span>
+      </a>
+      <a href="https://orcid.org/0000-0002-3809-3084" class="ext-link" target="_blank">
+        ORCID · 0000-0002-3809-3084
+        <span class="ext-link-arrow">→</span>
+      </a>
+      <a href="https://scholar.google.com/citations?user=GqU-Gl8AAAAJ" class="ext-link" target="_blank">
+        Google Scholar
+        <span class="ext-link-arrow">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Ragnhild Bø</p>
+  <p>Department of Psychology · University of Oslo</p>
+</footer>
+
+<script>
+  // Tab switching
+  function showTab(tab) {
+    document.querySelectorAll('.pub-list').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.pub-tab').forEach(el => el.classList.remove('active'));
+    document.getElementById(tab).classList.add('active');
+    event.target.classList.add('active');
+  }
+
+  // Scroll animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.08 });
+
+  document.querySelectorAll('section').forEach(s => observer.observe(s));
+</script>
+</body>
+</html>

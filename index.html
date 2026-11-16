@@ -3,8 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ragnhild Bø – Forsker i klinisk nevropsykologi</title>
+<title>Ragnhild Bø - Forsker, ph.d. i klinisk nevropsykologi</title>
 <meta name="description" content="Ragnhild Bø er forsker ved Psykologisk institutt, Universitetet i Oslo. Spesialisert i klinisk nevropsykologi, depresjon, alkohol og kognitiv funksjon. Fullført Program for yngre forskningsledere (YFL) 2026.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%232b5e3f'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' fill='%23f5f2ed' text-anchor='middle'%3ERB%3C/text%3E%3C/svg%3E">
+<link rel="alternate" hreflang="no" href="https://marcussteinsvaag-beep.github.io/ragnhildbo/">
+<link rel="alternate" hreflang="en" href="https://marcussteinsvaag-beep.github.io/ragnhildbo/en/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Ragnhild Bø - Forsker, ph.d. i klinisk nevropsykologi">
+<meta property="og:description" content="Forsker ved Psykologisk institutt, UiO. Depresjon, alkohol og kognitiv funksjon, digitale intervensjoner.">
+<meta property="og:url" content="https://marcussteinsvaag-beep.github.io/ragnhildbo/">
+<meta property="og:image" content="https://marcussteinsvaag-beep.github.io/ragnhildbo/ragnhild-bo.png">
+<meta property="og:locale" content="nb_NO">
+<meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
@@ -76,6 +86,22 @@
   }
 
   .nav-links a:hover { color: var(--accent); }
+
+  .lang-switch { margin-left: 1.5rem; font-size: 0.75rem; letter-spacing: 0.12em; color: var(--ink-faint); }
+  .lang-switch a { color: var(--ink-light); text-decoration: none; }
+  .lang-switch a:hover { color: var(--accent); }
+  .lang-switch .current { color: var(--accent); font-weight: 500; }
+  .nav-right { display: flex; align-items: center; }
+  @media (max-width: 900px) {
+    .nav-right { width: 100%; }
+    .nav-links { flex-wrap: nowrap !important; overflow-x: auto; scrollbar-width: none; white-space: nowrap; }
+    .nav-links::-webkit-scrollbar { display: none; }
+    .lang-switch { position: absolute; top: 1rem; right: 1.2rem; margin-left: 0; }
+    .hero { padding-top: 88px !important; }
+  }
+
+  /* ── UNDERVISNING ── */
+  #undervisning { background: var(--white); border-top: 1px solid var(--rule); }
 
   /* ── HERO ── */
   .hero {
@@ -917,13 +943,17 @@
 <!-- NAV -->
 <nav>
   <a href="#" class="nav-name">Ragnhild Bø</a>
+  <div class="nav-right">
   <ul class="nav-links">
     <li><a href="#om">Om meg</a></li>
     <li><a href="#forskning">Forskning</a></li>
+    <li><a href="#undervisning">Undervisning</a></li>
     <li><a href="#publikasjoner">Publikasjoner</a></li>
     <li><a href="#media">I media</a></li>
     <li><a href="#kontakt">Kontakt</a></li>
   </ul>
+  <span class="lang-switch"><span class="current">NO</span> | <a href="en/" hreflang="en" lang="en">EN</a></span>
+  </div>
 </nav>
 
 <!-- HERO -->
@@ -931,7 +961,7 @@
   <div class="hero-text">
     <div class="hero-label">Psykologisk institutt · Universitetet i Oslo</div>
     <h1 class="hero-name">Ragnhild <em>Bø</em></h1>
-    <p class="hero-title">Forsker · Klinisk nevropsykologi</p>
+    <p class="hero-title">Forsker · Ph.d. i klinisk nevropsykologi · Psykolog</p>
     <p class="hero-desc">Jeg forsker på sammenhengen mellom kognitiv funksjon og psykisk helse - med særlig fokus på depresjon, alkoholbruk, og mulighetene digitale intervensjoner gir for behandling og forebygging.</p>
     <div class="hero-cta">
       <a href="#forskning" class="btn-primary">Pågående prosjekter</a>
@@ -1002,6 +1032,14 @@
           </li>
         </ul>
       </div>
+      <div class="meta-group">
+        <h4>Verv</h4>
+        <ul class="cv-list">
+          <li><span class="cv-year">2019 →</span><span class="cv-desc">Medlem av etikkomiteen, Psykologisk institutt, UiO</span></li>
+          <li><span class="cv-year">2019 →</span><span class="cv-desc">Medlem av flere utvalg for ansettelser i faste og midlertidige stillinger, Psykologisk institutt, UiO</span></li>
+          <li><span class="cv-year">2016–2017</span><span class="cv-desc">Nestleder (2016) og styremedlem (2017), PsyDoc</span></li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
@@ -1045,6 +1083,35 @@
       <div class="group-item">DRIVE Arbeidspakke 3: Biomarkører og patologiske mekanismer</div>
       <div class="group-item">Klinisk nevrovitenskapelig forskningsgruppe (CNRG)</div>
       <div class="group-item">Psykoterapi for voksne</div>
+    </div>
+  </div>
+</section>
+
+<!-- UNDERVISNING -->
+<section id="undervisning">
+  <div class="section-label">Undervisning og veiledning</div>
+  <h2 class="section-title">Undervisning</h2>
+  <div class="about-grid">
+    <div class="about-text">
+      <p>Jeg har undervist ved Psykologisk institutt, UiO, siden 2012, som foreleser, seminarleder, emnelærer og sensor på psykologiemner på bachelor- og masternivå. Jeg har også veiledet bachelor- og masteroppgaver.</p>
+      <p>Jeg har tatt UiOs introduksjonsmodul i universitetspedagogikk (120 timer) og er ekstern sensor ved masterprogrammet i psykisk helsearbeid ved OsloMet.</p>
+    </div>
+    <div class="about-meta">
+      <div class="meta-group">
+        <h4>Undervisning og sensur</h4>
+        <ul class="cv-list">
+          <li><span class="cv-year">2012 →</span><span class="cv-desc">Foreleser, seminarleder, emnelærer og sensor, bachelor og master, Psykologisk institutt, UiO</span></li>
+          <li><span class="cv-year">2012 →</span><span class="cv-desc">Veileder for bachelor- og masteroppgaver, UiO</span></li>
+          <li><span class="cv-year">2019 →</span><span class="cv-desc">Ekstern sensor, master i psykisk helsearbeid, OsloMet</span></li>
+        </ul>
+      </div>
+      <div class="meta-group">
+        <h4>Universitetspedagogikk</h4>
+        <ul class="cv-list">
+          <li><span class="cv-year">2022</span><span class="cv-desc">Writing to learn, stor modul (30 t) og liten modul (15 t), UiO</span></li>
+          <li><span class="cv-year">2020</span><span class="cv-desc">Introduksjonsmodul i universitetspedagogikk (120 t), UiO</span></li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
@@ -1360,20 +1427,20 @@
       <span class="media-card-desc">Om potensialet i digitale verktøy for å øke tilgjengeligheten av hjelp ved problematisk alkoholbruk.</span>
     </a>
 
-    <a href="https://www.psykologtidsskriftet.no/?s=d&q=gr%C3%B8ftefyll+russetiden" target="_blank" class="media-card">
+    <a href="https://psykologtidsskriftet.no/asset/article/2024/04/Groftefyll-i-russetiden/Groftefyll-i-russetiden.pdf" target="_blank" class="media-card">
       <span class="media-card-outlet">Kronikk · april 2024</span>
       <span class="media-card-title">Grøftefyll i russetiden</span>
       <span class="media-card-desc">Psykologer må nå russen med kunnskap om faresignaler og konsekvenser av skadelig alkoholbruk blant unge.</span>
     </a>
 
-    <a href="https://www.psykologtidsskriftet.no/?s=d&q=fylla+unge+hjernen" target="_blank" class="media-card">
+    <a href="https://www.psykologtidsskriftet.no/asset/article/2017/09/Fylla-og-den-unge-hjernen/Fylla-og-den-unge-hjernen.pdf" target="_blank" class="media-card">
       <span class="media-card-outlet">Fra forskningen · september 2017</span>
       <span class="media-card-title">Fylla og den unge hjernen</span>
       <span class="media-card-desc">Ungdommer og unge voksne drikker seg oftere fulle enn andre - og forskningen viser hvilke konsekvenser det har for hjerneutviklingen.</span>
     </a>
 
-    <a href="https://www.psykologtidsskriftet.no/?s=d&q=kognitiv+rehabilitering+alkoholavhengighet" target="_blank" class="media-card">
-      <span class="media-card-outlet">Oversikt · februar 2019</span>
+    <a href="https://psykologtidsskriftet.no/asset/article/2019/01/Kognitiv-rehabilitering-ved-alkoholavhengighet--supplement-til-ordin%C3%A6r-behandling-/Kognitiv-rehabilitering-ved-alkoholavhengighet--supplement-til-ordin%C3%A6r-behandling-.pdf" target="_blank" class="media-card">
+      <span class="media-card-outlet">Vitenskapelig artikkel · februar 2019</span>
       <span class="media-card-title">Kognitiv rehabilitering ved alkoholavhengighet</span>
       <span class="media-card-desc">Kan kognitiv rehabilitering være et nyttig supplement til ordinær behandling av alkoholavhengighet?</span>
     </a>
