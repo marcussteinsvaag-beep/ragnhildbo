@@ -139,10 +139,11 @@
   .nav-right { display: flex; align-items: center; }
   @media (max-width: 900px) {
     .nav-right { width: 100%; }
-    .nav-links { flex-wrap: nowrap !important; overflow-x: auto; scrollbar-width: none; white-space: nowrap; }
-    .nav-links::-webkit-scrollbar { display: none; }
+    .nav-links { display: grid !important; grid-template-columns: repeat(3, auto); justify-content: space-between; width: 100%; row-gap: 0.55rem; column-gap: 0.8rem; white-space: nowrap; }
+    .nav-links a { font-size: 0.68rem; letter-spacing: 0.1em; }
     .lang-switch { position: absolute; top: 1rem; right: 1.2rem; margin-left: 0; }
-    .hero { padding-top: 88px !important; }
+    .hero { padding-top: 112px !important; }
+    html { scroll-padding-top: 120px; }
   }
 
   .project-role { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.6rem; }
