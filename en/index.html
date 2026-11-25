@@ -47,7 +47,8 @@
   "https://orcid.org/0000-0002-3809-3084",
   "https://scholar.google.com/citations?user=GqU-Gl8AAAAJ",
   "https://nva.sikt.no/research-profile/5327",
-  "https://www.sv.uio.no/psi/personer/vit/ragb/"
+  "https://www.sv.uio.no/psi/personer/vit/ragb/",
+  "https://www.researchgate.net/profile/Ragnhild-Bo-2"
  ]
 }
 </script>
@@ -149,6 +150,22 @@
   .project-role { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.6rem; }
   .project-link { display: inline-block; margin-top: 0.8rem; font-size: 0.75rem; color: var(--accent); text-decoration: none; letter-spacing: 0.05em; }
   .project-link:hover { text-decoration: underline; }
+
+
+  /* ── PRESSE ── */
+  #presse { background: var(--white); border-top: 1px solid var(--rule); }
+  .press-grid { display: grid; grid-template-columns: 260px 1fr; gap: 4rem; align-items: start; }
+  .press-photo img { width: 100%; aspect-ratio: 2 / 3; object-fit: cover; display: block; }
+  .press-photo .press-dl { display: inline-block; margin-top: 1rem; font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent); padding-bottom: 2px; }
+  .press-photo .press-meta { font-size: 0.75rem; color: var(--ink-faint); margin-top: 0.5rem; }
+  .bio-block { margin-bottom: 2.5rem; }
+  .bio-head { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; margin-bottom: 0.8rem; border-bottom: 1px solid var(--rule); padding-bottom: 0.5rem; }
+  .bio-head h4 { font-family: var(--sans); font-size: 0.72rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-light); }
+  .copy-btn { font-family: var(--sans); font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; background: none; border: 1px solid var(--rule); color: var(--ink-light); padding: 0.35rem 0.8rem; cursor: pointer; }
+  .copy-btn:hover { border-color: var(--accent); color: var(--accent); }
+  .bio-text p { font-size: 0.95rem; line-height: 1.75; color: var(--ink-light); margin-bottom: 0.9rem; }
+  .press-topics { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  @media (max-width: 900px) { .press-grid { grid-template-columns: 1fr; gap: 2.5rem; } .press-photo { max-width: 240px; } }
 
   /* ── UNDERVISNING ── */
   #undervisning { background: var(--white); border-top: 1px solid var(--rule); }
@@ -1547,6 +1564,48 @@
 
 </section>
 
+<!-- PRESSE -->
+<section id="presse">
+  <div class="section-label">For press and event organisers</div>
+  <h2 class="section-title">Press</h2>
+  <div class="press-grid">
+    <div class="press-photo">
+      <img src="../ragnhild-bo-presse.jpg" alt="Press photo of Ragnhild Bø" loading="lazy">
+      <a href="../ragnhild-bo-presse.jpg" download class="press-dl">Download press photo</a>
+      <div class="press-meta">JPG · 800 × 1200 px</div>
+    </div>
+    <div>
+      <div class="bio-block">
+        <div class="bio-head"><h4>Short bio</h4><button class="copy-btn" data-copy="bio-kort">Copy</button></div>
+        <div class="bio-text" id="bio-kort">
+          <p>Ragnhild Bø is a clinical psychologist and researcher in clinical neuroscience at the Department of Psychology, University of Oslo. Her research addresses the links between cognitive function and mental health, with a focus on depression, alcohol and digital interventions, and she is principal investigator of DigiTIFF, funded by the Kavli Trust.</p>
+        </div>
+      </div>
+      <div class="bio-block">
+        <div class="bio-head"><h4>Long bio</h4><button class="copy-btn" data-copy="bio-lang">Copy</button></div>
+        <div class="bio-text" id="bio-lang">
+          <p>Ragnhild Bø is a clinical psychologist and researcher at the Department of Psychology, University of Oslo, where she received her PhD in clinical neuropsychology in 2017. Her research examines how attention, executive functions and emotion regulation relate to mental health and treatment outcomes, with particular focus on depression, alcohol use in young adults and the cognitive consequences of COVID-19.</p>
+          <p>Bø is principal investigator of DigiTIFF, a Kavli Trust-funded study testing whether digital interventions can prevent relapse in adolescents who have had depression or anxiety. She leads the work package on biomarkers and pathological mechanisms in the DRIVE depression research network, served on the Norwegian Board of Technology&rsquo;s expert group for the Artificial Intimacy project, and is a member of the Dam Foundation&rsquo;s scientific review committee.</p>
+          <p>She has commented on alcohol, mental health and artificial intelligence in Norwegian media including NRK, Aftenposten, VG, Dagbladet and TV 2.</p>
+        </div>
+      </div>
+      <div class="bio-block">
+        <div class="bio-head"><h4>Topics</h4></div>
+        <div class="press-topics">
+          <span class="tag">Depression and relapse</span>
+          <span class="tag">Alcohol and the brain</span>
+          <span class="tag">Cognitive health</span>
+          <span class="tag">Digital health interventions</span>
+          <span class="tag">AI and mental health</span>
+          <span class="tag">Artificial intimacy</span>
+          <span class="tag">Cognitive effects of COVID-19</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /PRESSE -->
+
 <!-- KONTAKT -->
 <section id="kontakt">
   <div class="section-label">Get in touch</div>
@@ -1554,7 +1613,7 @@
   <div class="contact-grid">
     <div class="contact-info">
       <p style="color:var(--white); font-size:1.05rem; margin-bottom:1rem;">I am open to new positions and welcome enquiries about relevant opportunities.</p>
-      <p>I am also available for research collaboration, media enquiries and speaking engagements related to my research.</p>
+      <p>I am also available for research collaboration, media enquiries and speaking engagements related to my research. A bio and press photo are available under <a href="#presse" style="color:var(--accent-muted);">Press</a>.</p>
       <p style="font-size:0.88rem; padding: 1rem 1.2rem; border-left: 2px solid var(--accent-muted); color: rgba(255,255,255,0.55); line-height:1.7; margin-bottom: 1rem;">I am happy to act as an expert commentator on depression, alcohol and cognitive health, digital health interventions, and artificial intelligence in mental health care.</p>
       <div class="contact-details">
         <div class="contact-row">
@@ -1620,6 +1679,14 @@
   }, { threshold: 0.08 });
 
   document.querySelectorAll('section').forEach(s => observer.observe(s));
+</script>
+<script>
+document.querySelectorAll('.copy-btn').forEach(function(b){b.addEventListener('click',function(){
+  var el=document.getElementById(b.dataset.copy); var t=Array.from(el.querySelectorAll('p')).map(function(p){return p.innerText;}).join('\n\n');
+  var label=b.textContent; var done=function(){b.textContent=(document.documentElement.lang==='en'?'Copied':'Kopiert');setTimeout(function(){b.textContent=label;},1800);};
+  if(navigator.clipboard){navigator.clipboard.writeText(t).then(done,function(){fallback();});}else{fallback();}
+  function fallback(){var r=document.createRange();r.selectNodeContents(el);var s=window.getSelection();s.removeAllRanges();s.addRange(r);try{document.execCommand('copy');done();}catch(e){}}
+});});
 </script>
 <script data-goatcounter="https://ragnhildbo.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
